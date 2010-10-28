@@ -22,6 +22,10 @@
 	width: 980px;
 }
 
+#footer-widget-area {
+	margin-left: 20px;
+}
+
 #site-info {
 	margin-left: 40px;
 }
@@ -34,6 +38,7 @@
 #main {
 	overflow: visible;
 }
+
 .home .sticky {
 	margin-left: -40px;
 	padding: 18px 20px 18px 40px;

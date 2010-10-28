@@ -17,4 +17,8 @@ textarea,
 	font-size: 14px;
 }
 
+#site-description,
+#site-generator {
+	font-family: Georgia, serif;
+}
 /* @end */

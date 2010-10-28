@@ -46,6 +46,10 @@
 	padding-top: 20px;
 }
 
+#site-description {
+	margin-top: 10px;
+}
+
 #main {
 	overflow: visible;
 }

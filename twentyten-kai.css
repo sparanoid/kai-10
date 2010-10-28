@@ -30,11 +30,16 @@
 
 #site-info {
 	margin-left: 40px;
+	width: 700px;
 }
 
 #site-title {
 	margin: 0px 0px 18px 20px;
 	width: 680px;
+}
+
+#header {
+	padding-top: 16px;
 }
 
 #main {
@@ -44,6 +49,10 @@
 .home .sticky {
 	margin-left: -40px;
 	padding: 18px 20px 18px 40px;
+}
+
+#content img {
+	max-width: 640px;
 }
 
 a {

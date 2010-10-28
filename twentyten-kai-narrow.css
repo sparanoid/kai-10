@@ -1,0 +1,29 @@
+/* @group Twenty Ten Kai Narrow */
+/* by sparanoid.com */
+
+#access .menu-header,
+div.menu,
+#colophon,
+#branding,
+#main,
+#wrapper {
+	width: 800px;
+}
+
+#access, #footer, #branding img, #colophon {
+	width: 840px;
+}
+
+#site-info {
+	width: 520px;
+}
+
+#site-title {
+	width: 520px;
+}
+
+#content img {
+	max-width: 500px;
+}
+
+/* @end */

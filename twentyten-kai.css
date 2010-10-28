@@ -6,9 +6,9 @@
 	-webkit-box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
 	   -moz-box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
 	        box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
-	-webkit-border-radius: 3px; 
+	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
-	        border-radius: 3px; 
+	        border-radius: 3px;
 }
 
 #access, #footer, #branding img {
@@ -44,6 +44,14 @@
 .home .sticky {
 	margin-left: -40px;
 	padding: 18px 20px 18px 40px;
+}
+
+a {
+-webkit-transition: color 0.5s ease-in-out; 
+ -khtml-transition: color 0.5s ease-in-out; 
+   -moz-transition: color 0.5s ease-in-out; 
+     -o-transition: color 0.5s ease-in-out; 
+        transition: color 0.5s ease-in-out;
 }
 
 /* @end */

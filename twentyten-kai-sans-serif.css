@@ -2,7 +2,7 @@
 /* by sparanoid.com */
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, 'Microsoft JhengHei', sans-serif !important;
+	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, sans-serif !important;
 }
 
 body,
@@ -10,7 +10,7 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, 'Microsoft JhengHei', sans-serif;
+	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, sans-serif;
 }
 
 #content {

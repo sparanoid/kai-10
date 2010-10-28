@@ -25,7 +25,11 @@
 }
 
 #footer-widget-area {
-	margin-left: 20px;
+	margin-left: 40px;
+}
+
+#footer-widget-area .widget-area {
+	width: 210px;
 }
 
 #site-info {

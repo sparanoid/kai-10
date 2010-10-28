@@ -3,14 +3,19 @@
 
 #site-title {
 	font-size: 16px;
+	line-height: 16px;
 }
 
 #site-title {
-	margin: 0px 0px 0 20px;
+	margin-bottom: 15px;
 }
 
 #header {
-	padding-top: 10px;
+	padding-top: 15px;
+}
+
+#site-description {
+	margin: 0;
 }
 
 /* @end */

@@ -1,19 +1,25 @@
-/* start sparanoid reset */
-#access, #footer {
-	margin: 0 0 0 -20px !important;
-	width: 980px !important;
+/* @group Twenty Ten Kai */
+/* by sparanoid.com */
+
+#wrapper {
+	margin-bottom: 50px;
+	box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 5px 15px;
+	border-radius: 2px;
 }
 
-#branding img {
-	margin: 0 0 0 -20px !important;
+#access, #footer, #branding img {
+	margin: 0 0 0 -20px;
+	width: 980px;
 }
 
 #access .menu-header, div.menu {
-	margin-left: 32px !important;
+	margin-left: 32px;
 }
 
 #colophon {
-	width: 980px !important;
+	width: 980px;
 }
 
 #site-info {
@@ -21,15 +27,16 @@
 }
 
 #site-title {
-	margin: 0px 0px 18px 20px !important;
-	width: 680px !important;
+	margin: 0px 0px 18px 20px;
+	width: 680px;
 }
 
 #main {
-/* to margin left the sticky post background */
-	overflow: visible !important;
+	overflow: visible;
 }
 .home .sticky {
-	margin-left: -40px !important;
-	padding: 18px 20px 18px 40px !important;
+	margin-left: -40px;
+	padding: 18px 20px 18px 40px;
 }
+
+/* @end */

@@ -7,19 +7,24 @@
 #branding img {
 	margin: 0 0 0 -20px !important;
 }
+
 #access .menu-header, div.menu {
 	margin-left: 32px !important;
 }
+
 #colophon {
 	width: 980px !important;
 }
+
 #site-info {
 	margin-left: 40px;
 }
+
 #site-title {
 	margin: 0px 0px 18px 20px !important;
 	width: 680px !important;
 }
+
 #main {
 /* to margin left the sticky post background */
 	overflow: visible !important;

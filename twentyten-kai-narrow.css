@@ -26,4 +26,8 @@ div.menu,
 	max-width: 500px;
 }
 
+#footer-widget-area .widget-area {
+	width: 175px;
+}
+
 /* @end */

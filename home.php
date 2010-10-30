@@ -5,10 +5,7 @@
 <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name=HandheldFriendly content=True>
 <title>nio2 / a.k.a. 89log</title>
-
-<style type="text/css">
-<!--
--->
+<link rel=stylesheet media=all href="home.css">
 </style>
 
 <!--[if lt IE 9]>

@@ -6,6 +6,7 @@
 <meta name=HandheldFriendly content=True>
 <title>nio2 / a.k.a. 89log</title>
 <link rel=stylesheet media=all href="<?php bloginfo('template_url'); ?>/page-home.css">
+<!--<link rel=stylesheet media=all href="page-home.css">-->
 <meta http-equiv=refresh content="10;url=//nio2.com/wp-admin">
 </style>
 

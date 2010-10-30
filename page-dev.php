@@ -31,7 +31,7 @@ get_header(); ?>
 					<?php } ?>
 
 					<div class="entry-content">
-<p>这里是关于 nio2 的开发日志，包括更新升级、服务器状态，活动等信息</p>
+<p>這裡是 nio2 的開發者日誌存檔，包含更新生機、伺服器狀態、活動信息等</p>
 
 <h2>標簽云</h2>
 <p><?php wp_tag_cloud('smallest=10&largest=24&number=50'); ?></p>
@@ -42,7 +42,7 @@ get_header(); ?>
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <li class="post-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 <?php endwhile; else: ?>
-<li>这里什么都没有。</li>
+<li>這裡甚麼都沒有的說。</li>
 <?php endif; ?>
 <?php wp_reset_query(); ?>
 </ul>

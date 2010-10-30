@@ -103,7 +103,18 @@ em {
 	color: white;
 }
 
-* {
+#hell-one,
+#hell-two,
+#hell-three,
+#hell-four {
+	-webkit-transition: opacity 0.35s ease-in-out; 
+	 -khtml-transition: opacity 0.35s ease-in-out; 
+	   -moz-transition: opacity 0.35s ease-in-out; 
+	     -o-transition: opacity 0.35s ease-in-out; 
+	        transition: opacity 0.35s ease-in-out;
+}
+
+a {
 	-webkit-transition: all 0.15s ease-in-out; 
 	 -khtml-transition: all 0.15s ease-in-out; 
 	   -moz-transition: all 0.15s ease-in-out; 

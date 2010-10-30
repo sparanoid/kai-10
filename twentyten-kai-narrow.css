@@ -22,8 +22,10 @@ div.menu,
 	width: 520px;
 }
 
+#content .attachment img,
+.single-attachment #content,
 #content img {
-	max-width: 500px;
+	max-width: 900px;
 }
 
 #footer-widget-area .widget-area {

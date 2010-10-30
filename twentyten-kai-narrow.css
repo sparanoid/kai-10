@@ -25,7 +25,7 @@ div.menu,
 #content .attachment img,
 .single-attachment #content,
 #content img {
-	max-width: 900px;
+	max-width: 500px;
 }
 
 #footer-widget-area .widget-area {

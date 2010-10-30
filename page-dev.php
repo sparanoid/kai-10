@@ -38,7 +38,7 @@ get_header(); ?>
 
 <h2>文章列表</h2>
 <ul>
-<?php query_posts('showposts=50000');
+<?php query_posts('showposts=-1');
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <li class="post-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 <?php endwhile; else: ?>

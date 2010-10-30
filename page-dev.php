@@ -1,19 +1,40 @@
 <?php
 /**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
  * @package WordPress
- * @subpackage Default_Theme
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
  */
+
 /*
-Template Name: 开发首页
+Template Name: Development Home
 */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
-<div id="content" class="narrowcolumn" role="main">
+		<div id="container">
+			<div id="content" role="main">
 
-<h2>关于 nio2 开发</h2>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<?php if ( is_front_page() ) { ?>
+						<h2 class="entry-title"><?php the_title(); ?></h2>
+					<?php } else { ?>
+						<h1 class="entry-title"><?php the_title(); ?></h1>
+					<?php } ?>
+
+					<div class="entry-content">
 <p>这里是关于 nio2 的开发日志，包括更新升级、服务器状态，活动等信息</p>
+
+<h2>標簽云</h2>
+<p><?php wp_tag_cloud('smallest=10&largest=24&number=50'); ?></p>
 
 <h2>文章列表</h2>
 <ul>
@@ -21,13 +42,21 @@ Template Name: 开发首页
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <li class="post-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 <?php endwhile; else: ?>
-<li>这里什么都没有!</li>
+<li>这里什么都没有。</li>
 <?php endif; ?>
 <?php wp_reset_query(); ?>
 </ul>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+					</div><!-- .entry-content -->
+				</div><!-- #post-## -->
 
-</div>
+				<?php comments_template( '', true ); ?>
+
+<?php endwhile; ?>
+
+			</div><!-- #content -->
+		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

@@ -1,289 +1,112 @@
-/*
-Theme Name: Twenty Ten
-*/
-/*
-Used to style the TinyMCE editor.
-*/
-html .mceContentBody {
-	max-width:640px;
-}
-* {
-	font-family: Georgia, "Bitstream Charter", serif;
-	color: #444;
-	line-height: 1.5;
-}
-p,
-dl,
-td,
-th,
-ul,
-ol,
-blockquote {
-	font-size: 16px;
-}
-tr th,
-thead th,
-label,
-tr th,
-thead th {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-}
-pre {
-	font-family: "Courier 10 Pitch", Courier, monospace;
-}
-code, code var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-body, input, textarea {
-	font-size: 12px;
-	line-height: 18px;
-}
-hr {
-	background-color: #e7e7e7;
-	border:0;
-	height: 1px;
-	margin-bottom: 18px;
-	clear:both;
-}
-/* Text elements */
-p {
-	margin-bottom: 18px;
-}
-ul {
-	list-style: square;
-	margin: 0 0 18px 1.5em;
-}
-ol {
-	list-style: decimal;
-	margin: 0 0 18px 1.5em;
-}
-ol ol {
-	list-style:upper-alpha;
-}
-ol ol ol {
-	list-style:lower-roman;
-}
-ol ol ol ol {
-	list-style:lower-alpha;
-}
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-	margin-bottom:0;
-}
-dl {
-	margin:0 0 24px 0;
-}
-dt {
-	font-weight: bold;
-}
-dd {
-	margin-bottom: 18px;
-}
-strong {
-	font-weight: bold;
-	color: #000;
-}
-cite,
-em,
-i {
-	font-style: italic;
-	border: none;
-}
-big {
-	font-size: 131.25%;
-}
-ins {
-	background: #ffffcc;
-	border: none;
-	color: #333;
-}
-del {
-	text-decoration: line-through;
-	color: #555;
-}
-blockquote {
-	font-style: italic;
-	padding: 0 3em;
-}
-blockquote cite,
-blockquote em,
-blockquote i {
+@font-face {
+	font-family: 'ChunkFive';
+	src: url('ff/ChunkFive/chunkfive-webfont.eot');
+	/* use smiley to ignore mac local fonts */
+	src: local('☺'), url('ff/ChunkFive/chunkfive.otf') format('opentype'), url('ff/ChunkFive/chunkfive-webfont.svg') format('svg');
+	font-weight: normal;
 	font-style: normal;
 }
-pre {
-	background: #f7f7f7;
-	color: #222;
-	line-height: 18px;
-	margin-bottom: 18px;
-	padding: 1.5em;
+
+body {
+	background: yellow;
+	color: black;
+	font: normal normal normal 100%/1em ChunkFive, 'Helvetica Neue', Helvetica, Arial, STHeiti, 'Microsoft YaHei', sans-serif;
+	font-size: 48px;
+	-moz-font-feature-settings: "liga=1,dlig=1,hlig=1,calt=1,frac=1,salt=1,swsh=1,cswh=1";
+	     font-feature-settings: "liga=1,dlig=1,hlig=1,calt=1,frac=1,salt=1,swsh=1,cswh=1";
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+	overflow-x: hidden;
 }
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+
+p, a {
+	color: #000;
 }
-ins {
+
+p, h1 {
+	color: black;
+	text-shadow: 
+		rgba(255,0,0,0.1) 0 0 20px, 
+		rgba(255,0,0,0.1) 0 0 5px;
+}
+
+a {
 	text-decoration: none;
+/*	background: rgba(255,0,0,0.1);*/
+/*	padding: 1000px 0;*/
 }
-sup,
-sub {
-	height: 0;
-	line-height: 1;
-	vertical-align: baseline;
-	position: relative;
-	font-size: 10px;
-}
-sup {
-	bottom: 1ex;
-}
-sub {
-	top: .5ex;
-}
-a:link {
-	color:#0066cc;
-}
-a:visited {
-	color:#743399;
-}
-a:active,
+
 a:hover {
-	color: #ff4b33;
-}
-p,
-ul,
-ol,
-dd,
-pre,
-hr {
-	margin-bottom:24px;
-}
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-	margin-bottom:0;
-}
-pre,
-kbd,
-tt,
-var {
-	font-size: 15px;
-	line-height: 21px;
-}
-code {
-	font-size: 13px;
-}
-strong,
-b,
-dt,
-th {
-	color: #000;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: #000;
-	margin: 0 0 20px 0;
-	line-height: 1.5em;
-	font-weight: normal;
-}
-h1 {
-	font-size: 2.4em;
-}
-h2 {
-	font-size: 1.8em;
-}
-h3 {
-	font-size: 1.4em;
-}
-h4 {
-	font-size: 1.2em;
-}
-h5 {
-	font-size: 1em;
-}
-h6 {
-	font-size: 0.9em;
-}
-table {
-	border: 1px solid #e7e7e7 !important;
-	text-align: left;
-	margin: 0 -1px 24px 0;
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-tr th,
-thead th {
-	border: none !important;
-	color: #888;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 18px;
-	padding: 9px 24px;
-}
-tr td {
-	border: none !important;
-	border-top: 1px solid #e7e7e7 !important;
-	padding: 6px 24px;
+	color: #fff;
+	background: rgba(255,0,0,0.1);
+/*	padding: 5px 15px 2560px;*/
+	padding: 20px 2560px 10px;
+	margin: 0 -2560px;
 }
 
+em {
+	font-family: Palatino;
+	font-style: italic;
+	text-shadow: 
+		rgba(255,255,0,1) 0 0 50px, 
+		rgba(255,255,0,1) 0 0 40px, 
+		rgba(255,255,0,1) 0 0 30px, 
+		rgba(255,255,0,1) 0 0 20px, 
+		rgba(255,255,0,1) 0 0 10px, 
+		rgba(255,255,0,1) 0 0 5px;
+	opacity: 0.75;
+	-webkit-user-select: none;
+	 -khtml-user-select: none; 
+	   -moz-user-select: none; 
+	        user-select: none;
+}
 
-img {
-	margin: 0;
-	max-width: 640px;
+#wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 80px 40px 80px;
 }
-.alignleft,
-img.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 24px;
-	margin-top: 4px;
+
+#hell-one,
+#hell-two,
+#hell-three {
+	letter-spacing: -0.02em;
+	word-spacing: 0.1em;
+	opacity: 0.6;
 }
-.alignright,
-img.alignright {
-	display: inline;
-	float: right;
-	margin-left: 24px;
-	margin-top: 4px;
+
+#hell-four {
+	opacity: 0.3;
+	font: normal normal normal 10px/1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
 }
-.aligncenter,
-img.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+#hell-one:hover,
+#hell-two:hover,
+#hell-three:hover,
+#hell-four:hover {
+	opacity: 1;
 }
-img.alignleft,
-img.alignright,
-img.aligncenter {
-	margin-bottom: 12px;
+
+#hell-four a:hover {
+	color: white;
+	padding: 40px 2560px;
 }
-.wp-caption {
-	border: none;
-	background: #f1f1f1;
-	color: #888;
-	font-size: 12px;
-	line-height: 18px;
-	text-align: center;
-	margin-bottom: 20px;
-	padding: 4px;
-	-moz-border-radius: 0;
-	-khtml-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
+
+::-moz-selection {
+	background: rgba(255,0,0,0.1);
+	color: white;
 }
-.wp-caption img {
-	margin: 5px;
+
+::selection {
+	background: rgba(255,0,0,0.1);
+	color: white;
 }
-.wp-caption p.wp-caption-text {
-	margin: 0 0 4px;
-}
-.wp-smiley {
-	margin:0;
+
+* {
+	-webkit-transition: all 0.15s ease-in-out; 
+	 -khtml-transition: all 0.15s ease-in-out; 
+	   -moz-transition: all 0.15s ease-in-out; 
+	     -o-transition: all 0.15s ease-in-out; 
+	        transition: all 0.15s ease-in-out;
 }

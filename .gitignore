@@ -1,1 +1,17 @@
-*
+# Mac OS X files
+.DS_Store
+
+# Espresso project file
+*.esproj
+
+# Image original files
+*.psd
+*.ai
+
+# Vim leave-behinds
+*.swp
+
+# Logs
+*.log
+!errors.log
+

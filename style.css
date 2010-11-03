@@ -1,0 +1,20 @@
+/*
+Theme Name: Twenty Ten Kai
+Theme URI: http://sparanoid.com/
+Description: The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change default theme, install and go.
+Author: Sparanoid
+Author URI: http://sparanoid.com/
+Template: twentyten
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+
+@import url("../twentyten/style.css");
+
+@import url("twentyten-kai.css");
+
+@import url("twentyten-kai-narrow.css");
+
+@import url("twentyten-kai-small-header.css");
+
+@import url("twentyten-kai-sans-serif.css");

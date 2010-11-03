@@ -40,8 +40,8 @@ get_header(); ?>
 									<?php endif; ?>
 									<?php wp_reset_query(); ?>
 									</ul>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten_kai' ), 'after' => '</div>' ) ); ?>
+						<?php edit_post_link( __( 'Edit', 'twentyten_kai' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-## -->
 

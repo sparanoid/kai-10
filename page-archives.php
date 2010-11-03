@@ -27,10 +27,10 @@ get_header(); ?>
 					<?php } ?>
 
 					<div class="entry-content">
-						<h2><?php _e( 'Tag Cloud', 'twentyten_kai' ); ?></h2>
+						<h2>Tag cloud</h2>
 									<p id="tag-cloud"><?php wp_tag_cloud('smallest=9&largest=30&unit=px&order=ASC&number=0'); ?></p>
 						
-									<h2><?php _e( 'Archive list', 'twentyten_kai' ); ?></h2>
+									<h2>Archive list</h2>
 									<ul>
 									<?php query_posts('showposts=-1');
 									if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -40,8 +40,8 @@ get_header(); ?>
 									<?php endif; ?>
 									<?php wp_reset_query(); ?>
 									</ul>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten_kai' ), 'after' => '</div>' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten_kai' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-## -->
 

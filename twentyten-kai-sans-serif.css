@@ -1,8 +1,8 @@
-/* @group Twenty Ten Kai Sans Serif */
-/* by sparanoid.com */
+/* !Twenty Ten Kai Sans Serif */
+/* !by sparanoid.com */
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, sans-serif !important;
+	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, 'Microsoft YaHei', sans-serif !important;
 }
 
 body,
@@ -10,7 +10,7 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, sans-serif;
+	font-family: 'Helvetica Neue', Arial, Helvetica, "Nimbus Sans L", STHeiti, 'Microsoft YaHei', sans-serif;
 }
 
 #content {
@@ -21,4 +21,3 @@ textarea,
 #site-generator {
 	font-family: Georgia, serif;
 }
-/* @end */

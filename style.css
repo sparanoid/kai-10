@@ -13,7 +13,8 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 @import url("twentyten-kai.css");
 
-@import url("twentyten-kai-narrow.css");
+/* Uncomment this if you want it be narrower
+@import url("twentyten-kai-narrow.css"); */
 
 @import url("twentyten-kai-small-header.css");
 

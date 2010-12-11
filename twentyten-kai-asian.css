@@ -1,4 +1,4 @@
-/* !Twenty Ten Kai Sans Serif */
+/* !Twenty Ten Kai Asian (Sans Serif) */
 /* !by sparanoid.com */
 
 h1, h2, h3, h4, h5 {
@@ -20,4 +20,9 @@ textarea,
 #site-description,
 #site-generator {
 	font-family: Georgia, serif;
+}
+
+.page-title span,
+#comments-title em {
+	font-style: normal;
 }

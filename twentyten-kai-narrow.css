@@ -24,7 +24,8 @@ div.menu,
 
 #content .attachment img,
 .single-attachment #content,
-#content img {
+#content img,
+video {
 	max-width: 500px;
 }
 

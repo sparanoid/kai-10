@@ -3,9 +3,9 @@
 
 #wrapper {
 	margin-bottom: 50px;
-	-webkit-box-shadow: rgba(0,0,0,0.1) 0 5px 20px;
-	   -moz-box-shadow: rgba(0,0,0,0.1) 0 5px 20px;
-	        box-shadow: rgba(0,0,0,0.1) 0 5px 20px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 5px 20px;
+	   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 5px 20px;
+	        box-shadow: rgba(0, 0, 0, 0.1) 0 5px 20px;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 	        border-radius: 3px;
@@ -59,13 +59,19 @@
 	padding: 18px 20px 18px 40px;
 }
 
-#content img {
+#content img,
+video {
 	max-width: 640px;
 }
 
 a {
+	text-decoration: none;
 	-webkit-transition: color 0.2s ease-in-out; 
 	   -moz-transition: color 0.2s ease-in-out; 
 	     -o-transition: color 0.2s ease-in-out; 
 	        transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+	text-decoration: underline;
 }

@@ -8,15 +8,16 @@ What Differences?
 -----------------
 
  * A smaller header, box shadows, fluid style.
- * A narrower width compared with Twenty Ten (Read more in Installation)
- * More sans serif fonts, better readability.
+ * Additional narrower width compared with Twenty Ten (Read more in Installation part).
+ * Additional sans serif style for asian languages, better readability (Read more in Installation part).
 
 
 Installation
 ------------
 
  * Just put it into themes folder of your WordPress.
- * If you'd like to use a narrow version, uncomment `twentyten-kai-narrow.css` in `style.css`, and then rename `functions-sample.php` to `functions.php`.
+ * If you'd like to use narrow version, uncomment `@import url("twentyten-kai-narrow.css");` in `style.css`, and then rename `functions-sample.php` to `functions.php`.
+ * If if your blog is written in Chinese, Japanese and other asian languages, it's better to use sans-serif font family to increase readability. Uncomment `@import url("twentyten-kai-asian.css");` in `style.css`.
  * FYI, you can comment any css file in `style.css` to disable specified styles.
 
 

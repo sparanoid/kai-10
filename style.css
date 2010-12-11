@@ -5,7 +5,7 @@ Description: The missing child theme of Twenty Ten, A better interface based on 
 Author: Sparanoid
 Author URI: http://sparanoid.com/
 Template: twentyten
-Version: 1.0
+Version: 1.1
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
 */
 
@@ -13,9 +13,19 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 @import url("twentyten-kai.css");
 
-/* Uncomment this if you want it be narrower
-@import url("twentyten-kai-narrow.css"); */
-
 @import url("twentyten-kai-small-header.css");
 
-@import url("twentyten-kai-sans-serif.css");
+/*
+	Uncomment the following style if you want the theme to be narrower.
+*/
+
+/* @import url("twentyten-kai-narrow.css"); */
+
+
+/*
+	Uncomment the following style if your blog is written in Chinese, 
+	Japanese and other asian languages, it's better to use sans-serif 
+	font family to increase readability.
+*/
+
+/* @import url("twentyten-kai-asian.css"); */

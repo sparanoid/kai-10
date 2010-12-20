@@ -64,14 +64,22 @@ video {
 	max-width: 640px;
 }
 
-a {
+a:link {
 	text-decoration: none;
-	-webkit-transition: color 0.2s ease-in-out; 
-	   -moz-transition: color 0.2s ease-in-out; 
-	     -o-transition: color 0.2s ease-in-out; 
-	        transition: color 0.2s ease-in-out;
+}
+
+.widget-area a:visited,
+.entry-content a:visited {
+	color: rgba(153, 102, 51, 1);
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+.menu a:link {
+	-webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+	   -moz-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+	     -o-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+	        transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }

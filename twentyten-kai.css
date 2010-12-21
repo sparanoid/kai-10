@@ -69,7 +69,11 @@ a:link {
 }
 
 .widget-area a:visited,
-.entry-content a:visited {
+.entry-content a:visited,
+.comment-author a:visited,
+.comment-body a:visited,
+.logged-in-as a:visited,
+.must-log-in a:visited {
 	color: rgba(153, 102, 51, 1);
 }
 

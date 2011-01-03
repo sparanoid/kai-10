@@ -64,6 +64,12 @@ video {
 	max-width: 640px;
 }
 
+code {
+	color: #784;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -73,7 +79,8 @@ a:link {
 .comment-author a:visited,
 .comment-body a:visited,
 .logged-in-as a:visited,
-.must-log-in a:visited {
+.must-log-in a:visited,
+.pingback a:visited {
 	color: rgba(153, 102, 51, 1);
 }
 

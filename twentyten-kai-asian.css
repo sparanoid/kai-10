@@ -1,16 +1,13 @@
 /* !Twenty Ten Kai Asian (Sans Serif) */
 /* !by sparanoid.com */
 
-h1, h2, h3, h4, h5 {
-	font-family: Helvetica, Arial, STHeiti, 'Microsoft YaHei', sans-serif !important;
-}
-
 body,
 input,
 textarea,
+#site-title,
 .page-title span,
 .pingback a.url {
-	font-family: Helvetica, Arial, STHeiti, 'Microsoft YaHei', sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 #content {
@@ -23,6 +20,7 @@ textarea,
 }
 
 .page-title span,
-#comments-title em {
+#comments-title em,
+#comments .pingback .url {
 	font-style: normal;
 }

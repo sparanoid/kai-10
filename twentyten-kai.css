@@ -74,6 +74,12 @@ a:link {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
+#author-link a:visited,
+#author-description a:visited,
 .widget-area a:visited,
 .entry-content a:visited,
 .comment-author a:visited,
@@ -81,11 +87,7 @@ a:link {
 .logged-in-as a:visited,
 .must-log-in a:visited,
 .pingback a:visited {
-	color: rgba(153, 102, 51, 1);
-}
-
-a:hover {
-	text-decoration: underline;
+	color: #963;
 }
 
 .menu a:link {

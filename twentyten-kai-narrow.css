@@ -22,11 +22,14 @@ div.menu,
 	width: 520px;
 }
 
-#content .attachment img,
-.single-attachment #content,
 #content img,
 video {
 	max-width: 500px;
+}
+
+.single-attachment #content,
+#content .attachment img{
+	max-width: 760px; /* 900 - 100 - 20*2 */
 }
 
 #footer-widget-area .widget-area {

@@ -7,7 +7,7 @@ The missing child theme of Twenty Ten, A better interface based on Twenty Ten, N
 What Differences?
 -----------------
 
- * A smaller header, box shadows, fluid style.
+ * A smaller header, box shadows, better link color, fluid style.
  * Additional narrower width compared with Twenty Ten (Read more in Installation part).
  * Additional sans-serif style for asian languages, better readability (Read more in Installation part).
 

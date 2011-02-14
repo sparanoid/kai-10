@@ -15,7 +15,7 @@ What Differences?
 Installation
 ------------
 
- * Just put it into themes folder of your WordPress.
+ * Just put it into themes folder of your WordPress installation directory.
  * If you'd like to use narrow version, uncomment `@import url("twentyten-kai-narrow.css");` in `style.css`, and then rename `functions-sample.php` to `functions.php`.
  * If if your blog is written in Chinese, Japanese and other asian languages, it's better to use sans-serif font family to increase readability. Uncomment `@import url("twentyten-kai-asian.css");` in `style.css`.
  * FYI, you can comment any css style in `style.css` to disable specified feature.

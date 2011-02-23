@@ -1,5 +1,4 @@
-/*! Twenty Ten Kai Narrow by sparanoid.com */
-
+/* Global width reset */
 #access .menu-header,
 div.menu,
 #colophon,
@@ -9,28 +8,31 @@ div.menu,
 	width: 800px;
 }
 
+/* Make sure these elements have the correct width too */
 #access, #footer, #branding img, #colophon {
 	width: 840px;
 }
 
+/* Smaller width make sure site title in header / footer displays correctly */
+#site-title,
 #site-info {
 	width: 520px;
 }
 
-#site-title {
-	width: 520px;
-}
-
+/* Make sure videos and images that larger than container width display correctly */
 #content img,
 video {
 	max-width: 500px;
 }
 
+/* Adjust maximum width of images in single attachment page */
+/* The vaule: 900 - 100 - 20*2 */
 .single-attachment #content,
 #content .attachment img{
-	max-width: 760px; /* 900 - 100 - 20*2 */
+	max-width: 760px;
 }
 
+/* Width of widgets in footer have to be re-defined */
 #footer-widget-area .widget-area {
 	width: 175px;
 }

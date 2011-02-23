@@ -1,5 +1,10 @@
-/*! Twenty Ten Kai by sparanoid.com */
-
+/*!
+	Twenty Ten Kai by Sparanoid
+	Read more: http://nio2.com/resources/twentyten-kai/
+*/
+/*!
+*/
+/* Add shadow effect to main wrapper */
 #wrapper {
 	margin-bottom: 50px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 5px 25px;
@@ -10,60 +15,82 @@
 	        border-radius: 4px;
 }
 
+/* Extend these elements to the edge of wrapper */
 #access, #footer, #branding img {
 	margin: 0 0 0 -20px;
 	width: 980px;
 }
 
+/* Make sure navigation has a bigger margin */
 #access .menu-header, div.menu {
 	margin-left: 32px;
 }
 
-#colophon {
-	width: 980px;
+/* Adjust main header of the site */
+#header {
+	padding-top: 20px;
 }
 
-#footer-widget-area {
-	margin-left: 40px;
+/* Then site description right besides the site header */
+#site-description {
+	margin-top: 10px;
 }
 
-#footer-widget-area .widget-area {
-	width: 210px;
-}
-
-#site-info {
-	margin-left: 40px;
-	width: 700px;
-}
-
+/* Make sure site title in header has the right margin-left value */
 #site-title {
 	margin: 0px 0px 18px 20px;
 	width: 680px;
 }
 
-#header {
-	padding-top: 20px;
+/* Make sure site title in footer has the right margin-left value */
+#site-info {
+	margin-left: 40px;
+	width: 700px;
 }
 
-#site-description {
-	margin-top: 10px;
+/* WordPress promoted link right besides site title in footer */
+#colophon {
+	width: 980px;
 }
 
+/* Widgets in footer work arround */
+#footer-widget-area {
+	margin-left: 40px;
+}
+	#footer-widget-area .widget-area {
+		width: 210px;
+	}
+
+/* Just a trick */
 #main {
 	overflow: visible;
 }
 
+/* Better looking for sticky post */
 .home .sticky,
 #entry-author-info {
 	margin-left: -40px;
 	padding: 18px 20px 18px 40px;
 }
 
+/* No border and white background for user avatar */
+#entry-author-info #author-avatar {
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+#entry-author-info #author-description {
+	margin-left: 82px;
+}
+
+/* Make sure videos and images that larger than container width display correctly */
 #content img,
 video {
 	max-width: 640px;
 }
 
+/* Better code wrapping in containter */
 code {
 	color: #784;
 	word-break: break-all;
@@ -74,14 +101,15 @@ pre {
 	overflow: auto;
 }
 
+/* Make links look better */
 a:link {
 	text-decoration: none;
 }
+	a:hover {
+		text-decoration: underline;
+	}
 
-a:hover {
-	text-decoration: underline;
-}
-
+/* Better color for links */
 #author-link a:visited,
 #author-description a:visited,
 .widget-area a:visited,
@@ -94,6 +122,7 @@ a:hover {
 	color: #963;
 }
 
+/* Make navigation modern */
 .menu a:link {
 	-webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 	   -moz-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;

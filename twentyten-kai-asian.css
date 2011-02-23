@@ -1,5 +1,4 @@
-/*! Twenty Ten Kai Asian (Sans Serif) by sparanoid.com */
-
+/* Global font-family reset */
 body,
 input,
 textarea,
@@ -9,15 +8,18 @@ textarea,
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
+/* Adjust font size in main content */
 #content {
 	font-size: 14px;
 }
 
+/* These should be serif */
 #site-description,
 #site-generator {
 	font-family: Georgia, serif;
 }
 
+/* Italic style not good for Asian, right? */
 .page-title span,
 .comment-author .says,
 #comments-title em,

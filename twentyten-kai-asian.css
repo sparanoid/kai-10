@@ -22,6 +22,8 @@ textarea,
 /* Italic style not good for Asian, right? */
 .page-title span,
 .comment-author .says,
+#site-description,
+#site-generator,
 #comments-title em,
 #comments .pingback .url {
 	font-style: normal;

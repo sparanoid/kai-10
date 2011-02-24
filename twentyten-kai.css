@@ -84,10 +84,12 @@
 	margin-left: 82px;
 }
 
-/* Make sure videos and images that larger than container width display correctly */
+/* Make sure videos and images that larger than container width display correctly. 
+   Although in WordPress 3.1, images uploaded through built-in and inserted via its
+   media manager can have currect width, but hard coded images still need this. */
 #content img,
 video {
-	max-width: 640px;
+	max-width: 100%;
 }
 
 /* Better code wrapping in containter */
@@ -99,6 +101,11 @@ code {
 
 pre {
 	overflow: auto;
+}
+
+/* Try to prevent layout breakers */
+.comment-body {
+	word-wrap: break-word;
 }
 
 /* Make links look better */

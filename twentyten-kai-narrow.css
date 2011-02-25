@@ -30,3 +30,8 @@ div.menu,
 #footer-widget-area .widget-area {
 	width: 175px;
 }
+
+/* Better border width when a gallery comes in 3 cols */
+.gallery img {
+	border-width: 5px;
+}

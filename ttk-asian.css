@@ -5,7 +5,7 @@ textarea,
 #site-title,
 .page-title span,
 .pingback a.url {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 /* Adjust font size in main content */
@@ -14,6 +14,7 @@ textarea,
 }
 
 /* These should be serif */
+blockquote,
 #site-description,
 #site-generator {
 	font-family: Georgia, serif;

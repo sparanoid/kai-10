@@ -19,9 +19,9 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 @import url("ttk-header.min.css") screen;
 
 /* Uncomment the following style if you want the theme to be narrower. */
-/* @import url("ttk-narrow.min.css") screen; */
+/*@import url("ttk-narrow.min.css") screen; */
 
 /* Uncomment the following style if your blog is written in Chinese, 
    Japanese and other asian languages, it's better to use sans-serif 
    font family to increase readability. */
-/* @import url("ttk-asian.min.css") screen; */
+/*@import url("ttk-asian.min.css") screen; */

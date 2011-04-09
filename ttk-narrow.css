@@ -10,6 +10,7 @@ div.menu,
 
 /* Make sure these elements have the correct width too */
 #access, #footer, #branding img, #colophon {
+	max-width: 840px;
 	width: 840px;
 }
 

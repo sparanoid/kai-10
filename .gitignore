@@ -11,3 +11,4 @@
 # Logs
 *.log
 !errors.log
+*.tmproj

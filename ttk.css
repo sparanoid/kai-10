@@ -96,10 +96,6 @@ code {
 	word-wrap: break-word;
 }
 
-pre {
-	overflow: auto;
-}
-
 /* Try to prevent layout breakers */
 .comment-body {
 	word-wrap: break-word;

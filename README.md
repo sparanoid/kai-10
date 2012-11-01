@@ -8,15 +8,12 @@ What Differences?
 -----------------
 
  * A smaller header, box shadows, better link color, fluid style.
- * Additional sans-serif style for asian languages, better readability (Read more in Installation part).
 
 
 Installation
 ------------
 
  * Just put it into themes folder of your WordPress installation directory.
- * If if your blog is written in Chinese, Japanese and other asian languages, it's better to use sans-serif font family to increase readability. Uncomment `@import url("ttk-asian.min.css");` in `style.css`.
- * FYI, you can comment any css style in `style.css` to disable specified feature.
 
 
 License

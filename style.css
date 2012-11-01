@@ -17,8 +17,3 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 /* Enable Twenty Ten Kai with a smaller header, activated by default. */
 @import url("ttk-header.min.css") screen;
-
-/* Uncomment the following style if your blog is written in Chinese,
-   Japanese and other asian languages, it's better to use sans-serif
-   font family to increase readability. */
-/*@import url("ttk-asian.min.css") screen; */

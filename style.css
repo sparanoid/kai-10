@@ -14,6 +14,3 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 /* Basic styles for Twenty Ten Kai. */
 @import url("ttk.min.css") screen;
-
-/* Enable Twenty Ten Kai with a smaller header, activated by default. */
-@import url("ttk-header.min.css") screen;

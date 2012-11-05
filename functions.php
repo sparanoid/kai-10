@@ -29,7 +29,8 @@ add_action( 'wp_enqueue_scripts', 'twentyten_scripts_styles_override' );
 function twenty_ten_kai_infinite_scroll_init() {
   add_theme_support( 'infinite-scroll', array(
     'container' => 'content',
-    'render'    => 'twenty_ten_kai_infinite_scroll_render'
+    'render'    => 'twenty_ten_kai_infinite_scroll_render',
+    'footer'    => 'wrapper'
   ) );
 }
 add_action( 'init', 'twenty_ten_kai_infinite_scroll_init' );

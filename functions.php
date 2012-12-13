@@ -20,4 +20,15 @@ function twentyten_scripts_styles_override() {
    wp_enqueue_style( 'twentyten-kai-style', get_stylesheet_directory_uri() . '/core.css' );
  }
 add_action( 'wp_enqueue_scripts', 'twentyten_scripts_styles_override' );
+
+/**
+ * Override default Jetpack Infinite Scroll footer
+ *
+ * @since Twenty Ten Kai 2.2.3
+ */
+function twentyten_kai_infinite_scroll_credit() {
+  return '<a href="http://postholic.com/rsrc/twentyten-kai/">Twenty Ten Kai</a>';
+}
+
+add_filter( 'infinite_scroll_credit', 'twentyten_kai_infinite_scroll_credit' );
 ?>

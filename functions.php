@@ -31,4 +31,16 @@ function twentyten_kai_infinite_scroll_credit() {
 }
 
 add_filter( 'infinite_scroll_credit', 'twentyten_kai_infinite_scroll_credit' );
+
+
+/**
+ * Initialize the update checker
+ *
+ * @since Twenty Kai Kai 2.2.3
+ */
+require 'includes/theme-update-checker.php';
+$twentyten_kai_update_checker = new ThemeUpdateChecker(
+  'twentyten-kai',
+  'http://sparanoid.com/lab/wordpress/twentyten-kai.json'
+);
 ?>

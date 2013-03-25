@@ -1,8 +1,15 @@
 /*!
-  Twenty Ten Kai by Tunghsiao Liu
+  Kai 10 by Tunghsiao Liu
 */
 /*!
 */
+
+// Enables 3D acceleration to gain some performance
+#content {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
 
 /* Add shadow effect to main wrapper */
 #wrapper {

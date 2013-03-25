@@ -1,14 +1,6 @@
-# Mac OS X files
+# osx noise
 .DS_Store
+profile
 
-# Image original files
-*.psd
-*.ai
-
-# Vim leave-behinds
-*.swp
-
-# Logs
-*.log
-!errors.log
-*.tmproj
+# CodeKit
+codekit-config.json

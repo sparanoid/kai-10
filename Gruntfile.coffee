@@ -1,6 +1,7 @@
 "use strict"
+LIVERELOAD_PORT = 35729
 path = require("path")
-lrSnippet = require("grunt-contrib-livereload/lib/utils").livereloadSnippet
+lrSnippet = require("connect-livereload")(port: LIVERELOAD_PORT)
 mountFolder = (connect, dir) ->
   connect.static path.resolve(dir)
 
@@ -12,8 +13,8 @@ module.exports = (grunt) ->
 
   # Configurable paths
   coreConfig =
-    app: "app"
-    assets: "app/assets"
+    app: ""
+    assets: ""
     dist: ""
     pkg: grunt.file.readJSON('package.json')
     meta:
@@ -37,29 +38,38 @@ module.exports = (grunt) ->
       #   tasks: ["jshint:gruntfile"]
 
       less:
-        files: ["<%= core.assets %>/less/{,*/}*.less"]
+        files: ["<%= core.assets %>/{,*/}*.less"]
         tasks: ["less:server"]
 
       livereload:
-        files: ["<%= core.dist %>/*.php", "{.tmp,<%= core.dist %>}/{,*/}*.css"]
-        tasks: ["livereload"]
+        options:
+          livereload: LIVERELOAD_PORT
+
+        files: [
+          "<%= core.app %>/*.php",
+          "{.tmp,<%= core.app %>}/{,*/}*.css"
+
+          "<%%= core.app %>/*.php"
+          "{.tmp,<%%= core.app %>}/styles/{,*/}*.css"
+          "{.tmp,<%%= core.app %>}/scripts/{,*/}*.js"
+          "<%%= core.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
+        ]
 
     connect:
       options:
         port: 9001
-
         # change this to '0.0.0.0' to access the server from outside
         hostname: "localhost"
 
       livereload:
         options:
           middleware: (connect) ->
-            [lrSnippet, mountFolder(connect, ".tmp"), mountFolder(connect, "app")]
+            [mountFolder(connect, ".tmp"), mountFolder(connect, core.app), lrSnippet]
 
       dist:
         options:
           middleware: (connect) ->
-            [mountFolder(connect, "dist")]
+            [mountFolder(connect, core.dist)]
 
     open:
       server:
@@ -114,7 +124,12 @@ module.exports = (grunt) ->
           dot: true
           cwd: "<%= core.app %>"
           dest: "<%= core.dist %>"
-          src: ["*.{ico,txt}", ".htaccess", "assets/img/{,*/}*.{webp,gif}", "assets/fonts/*"]
+          src: [
+            "*.{ico,txt}"
+            ".htaccess"
+            "assets/img/{,*/}*.{webp,gif}"
+            "assets/fonts/*"
+          ]
         ,
           expand: true
           dot: true

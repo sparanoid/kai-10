@@ -46,13 +46,13 @@ module.exports = (grunt) ->
           livereload: LIVERELOAD_PORT
 
         files: [
-          "<%= core.app %>/*.php",
+          "<%= core.app %>/*.php"
           "{.tmp,<%= core.app %>}/{,*/}*.css"
 
-          "<%%= core.app %>/*.php"
-          "{.tmp,<%%= core.app %>}/styles/{,*/}*.css"
-          "{.tmp,<%%= core.app %>}/scripts/{,*/}*.js"
-          "<%%= core.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
+          # "<%%= core.app %>/*.php"
+          # "{.tmp,<%%= core.app %>}/styles/{,*/}*.css"
+          # "{.tmp,<%%= core.app %>}/scripts/{,*/}*.js"
+          # "<%%= core.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
         ]
 
     connect:
@@ -87,24 +87,24 @@ module.exports = (grunt) ->
     less:
       dist:
         options:
-          paths: ["<%= core.app %>/assets/less"]
+          paths: ["<%= core.app %>"]
 
         # yuicompress: true
         files:
-          ".tmp/assets/css/main.css": "<%= core.app %>/assets/less/main.less"
+          ".tmp/core.css": "<%= core.assets %>/core.less"
 
       server:
         options:
-          paths: ["<%= core.app %>/assets/less"]
+          paths: ["<%= core.app %>"]
           dumpLineNumbers: "all"
 
         files:
-          ".tmp/assets/css/main.css": "<%= core.app %>/assets/less/main.less"
+          ".tmp/core.css": "<%= core.assets %>/core.less"
 
     cssmin:
       dist:
         files:
-          "<%= core.dist %>/assets/css/main.css": [".tmp/assets/css/{,*/}*.css", "<%= core.app %>/assets/css/{,*/}*.css"]
+          "<%= core.dist %>/core.css": [".tmp/{,*/}*.css", "<%= core.assets %>/{,*/}*.css"]
 
     # Put files not handled in other tasks here
     copy:
@@ -147,16 +147,14 @@ module.exports = (grunt) ->
           src: ["**"]
         ]
 
-  grunt.renameTask "regarde", "watch"
-
   grunt.registerTask "server", (target) ->
-    return grunt.task.run(["build", "open", "connect:dist:keepalive"])  if target is "dist"
-    grunt.task.run ["clean:server", "concurrent:server", "livereload-start", "connect:livereload", "copy", "open", "watch"]
+    return grunt.task.run(["build", "open", "connect:dist:keepalive"]) if target is "dist"
+    grunt.task.run ["clean:server", "connect:livereload", "open", "watch"]
 
-  grunt.registerTask "test", ["clean:server", "concurrent:test", "connect:test"]
+  # grunt.registerTask "test", ["clean:server", "concurrent:test", "connect:test"]
 
   grunt.registerTask "build", ["clean:dist", "useminPrepare", "concurrent:dist", "cssmin", "uglify", "copy", "rev", "usemin"]
 
   grunt.registerTask "deploy", ["default", "copy:deploy"]
 
-  grunt.registerTask "default", ["jshint", "test", "build"]
+  grunt.registerTask "default", ["build"]

@@ -1,0 +1,21 @@
+{
+  "name": "kai-10",
+  "version": "2.2.6",
+  "description": "The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sparanoid/kai-10.git"
+  },
+  "author": "Tunghsiao Liu",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "c4440eb9020e6d352d3e829ea27d40eb0715a1a4",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-livereload": "~0.1.2"
+  }
+}

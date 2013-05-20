@@ -1,6 +1,6 @@
 {
   "name": "kai-10",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.",
   "main": "index.js",
   "scripts": {

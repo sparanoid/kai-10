@@ -8,7 +8,7 @@ You can download the latest version [here][dl]. It has a custom theme update che
 
 ## What's the Difference?
 
-- A smaller header, box shadows, better link color, fluid style.
+- A smaller header, better link color, fluid style, many minor tweaks.
 
 ## “Why not submit these themes to WordPress.org official repository?”
 

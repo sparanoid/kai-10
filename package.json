@@ -4,7 +4,7 @@
   "description": "The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,9 @@
     "grunt-contrib-clean": "~0.4.1",
     "grunt-rename": "~0.1.2",
     "grunt-replace": "~0.4.4",
+    "grunt-phplint": "0.0.5",
+    "grunt-coffeelint": "0.0.6",
+    "grunt-recess": "~0.3.3",
     "matchdep": "~0.1.2"
   }
 }

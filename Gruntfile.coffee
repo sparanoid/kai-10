@@ -97,7 +97,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: "<%= core.app %>/"
-          src: ["**", "!node_modules/**", "!notifier/**", "!*.coffee", "!*.json", "!*.less"]
+          src: ["**", "!node_modules/**", "!templates/**", "!*.coffee", "!*.json", "!*.less"]
           dest: "<%= core.pkg.name %>"
         ]
 
@@ -130,7 +130,7 @@ module.exports = (grunt) ->
           expand: true
           flatten: true
           cwd: "<%= core.app %>/"
-          src: ["notifier/<%= core.pkg.name %>.json"]
+          src: ["templates/<%= core.pkg.name %>.json"]
           dest: "/Users/sparanoid/Dropbox/Sites/sparanoid.com/lab/wordpress/"
         ]
 

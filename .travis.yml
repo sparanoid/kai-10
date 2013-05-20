@@ -1,7 +1,7 @@
-language: node_js
-node_js:
-  - "0.10"
-before_script:
-  - sudo aptitude -y which
-  - which php
-  - npm install -g grunt-cli
+language: php
+php:
+  - "5.4"
+# before_script:
+#   - sudo aptitude -y which
+#   - which php
+#   - npm install -g grunt-cli

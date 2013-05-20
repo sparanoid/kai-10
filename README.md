@@ -1,4 +1,4 @@
-# Kai 10
+# Kai 10 [![Build Status](https://travis-ci.org/sparanoid/kai-10.png)](https://travis-ci.org/erickrdch/grunt-string-replace) [![Node Dependencies](https://david-dm.org/sparanoid/kai-10.png)](https://david-dm.org/erickrdch/grunt-string-replace)
 
 The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.
 

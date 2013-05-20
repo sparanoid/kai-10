@@ -1,5 +1,3 @@
-"use strict"
-
 module.exports = (grunt) ->
 
   # Load all grunt tasks
@@ -11,7 +9,7 @@ module.exports = (grunt) ->
     app: "."
     assets: "."
     dist: "."
-    pkg: grunt.file.readJSON('package.json')
+    pkg: grunt.file.readJSON("package.json")
     banner: do ->
       banner = "/*\n"
       banner += " * (c) <%= core.pkg.author %>.\n *\n"
@@ -25,14 +23,46 @@ module.exports = (grunt) ->
   grunt.initConfig
     core: coreConfig
 
+    coffeelint:
+      options:
+        indentation: 2
+        no_stand_alone_at:
+          level: "error"
+        no_empty_param_list:
+          level: "error"
+        max_line_length:
+          level: "ignore"
+
+      test:
+        files:
+          src: ["Gruntfile.coffee"]
+
+    phplint:
+      test:
+        files:
+          src: ["<%= core.app %>/{,*/}*.php"]
+
+    recess:
+      options:
+        noIDs: false
+        noOverqualifying: false
+
+      test:
+        files:
+          src: ["<%= core.app %>/{,*/}*.less"]
+
     watch:
-      # gruntfile:
-      #   files: "Gruntfile.coffee"
-      #   tasks: ["jshint:gruntfile"]
+      coffee:
+        files: ["<%= coffeelint.test.files.src %>"]
+        tasks: ["coffeelint"]
+
+      phplint:
+        files: ["<%= phplint.test.files.src %>"]
+        tasks: ["phplint"]
 
       less:
-        files: ["<%= core.app %>/{,*/}*.less"]
-        tasks: ["less:server"]
+        files: ["<%= recess.test.files.src %>"]
+        tasks: ["less:server", "recess"]
 
     less:
       server:
@@ -41,7 +71,7 @@ module.exports = (grunt) ->
           dumpLineNumbers: "all"
 
         files:
-          "<%= core.app %>/core.css": "<%= core.app %>/core.less"
+          "<%= core.app %>/core.css": ["<%= recess.test.files.src %>"]
 
       dist:
         options:
@@ -49,7 +79,7 @@ module.exports = (grunt) ->
           # yuicompress: true
 
         files:
-          "<%= core.app %>/core.css": "<%= core.app %>/core.less"
+          "<%= core.app %>/core.css": ["<%= recess.test.files.src %>"]
 
     cssmin:
       dist:
@@ -57,12 +87,12 @@ module.exports = (grunt) ->
           banner: "<%= core.banner %>"
 
         files:
-          "<%= core.dist %>/core.css": [".tmp/{,*/}*.css", "<%= core.app %>/{,*/}*.css"]
+          "<%= core.dist %>/core.css": ["<%= recess.test.files.src %>"]
 
     compress:
       dist:
         options:
-          archive: "<%= core.app %>/.tmp/<%= core.pkg.name %>.zip"
+          archive: ".tmp/<%= core.pkg.name %>.zip"
 
         files: [
           expand: true
@@ -75,7 +105,7 @@ module.exports = (grunt) ->
       dist:
         files: [
           expand: true
-          cwd: "<%= core.app %>/.tmp/"
+          cwd: ".tmp/"
           src: ["<%= core.pkg.name %>*.zip"]
           dest: "/Users/sparanoid/Dropbox/Sites/static.sparanoid.com/download/"
         ]
@@ -84,8 +114,8 @@ module.exports = (grunt) ->
     rename:
       dist:
         files: [
-          src: ["<%= core.app %>/.tmp/<%= core.pkg.name %>.zip"]
-          dest: "<%= core.app %>/.tmp/<%= core.pkg.name %>-<%= core.pkg.version %>.zip"
+          src: [".tmp/<%= core.pkg.name %>.zip"]
+          dest: ".tmp/<%= core.pkg.name %>-<%= core.pkg.version %>.zip"
         ]
 
     replace:
@@ -104,7 +134,7 @@ module.exports = (grunt) ->
           dest: "/Users/sparanoid/Dropbox/Sites/sparanoid.com/lab/wordpress/"
         ]
 
-    clean: ["<%= core.app %>/.tmp"]
+    clean: [".tmp"]
 
   grunt.registerTask "server", ["watch"]
 

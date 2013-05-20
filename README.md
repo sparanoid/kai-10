@@ -2,20 +2,21 @@
 
 The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.
 
+## Download
 
-## What Differences?
+You can download the latest version [here][dl]. It has a custom theme update checker to keep it update to date as long as you activate it.
 
- * A smaller header, box shadows, better link color, fluid style.
+## What's the Difference?
 
+- A smaller header, box shadows, better link color, fluid style.
 
-## Installation
+## “Why not submit these themes to WordPress.org official repository?”
 
- * Just put it into themes folder of your WordPress installation directory.
-
+Answer: Their theme reviewer thinks my theme “just offer a few minor CSS tweaks and adds new footer credit links.” [#](http://themes.trac.wordpress.org/ticket/10728)
 
 ## License
 
-The license under which the Kai 10 is released is the GPLv2 from the [Free Software Foundation][fsf].
+GPLv2
 
-[fsf]: http://www.fsf.org
 [demo]: http://postholic.com/kai-10-demo/
+[dl]: http://rsrc.sparanoid.com/download/kai-10.zip

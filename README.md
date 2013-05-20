@@ -11,7 +11,7 @@ You can download the latest version [here][dl]. It has a custom theme update che
 - A smaller header
 - Better link color
 - Fluid style
-- many minor tweaks
+- Many minor tweaks
 
 ## “Why not submit these themes to WordPress.org official repository?”
 

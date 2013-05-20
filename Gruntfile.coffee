@@ -137,6 +137,6 @@ module.exports = (grunt) ->
     clean: [".tmp"]
 
   grunt.registerTask "server", ["watch"]
-  grunt.registerTask "test", ["coffeelint", "phplint", "recess"]
+  grunt.registerTask "test", ["coffeelint", "recess"]
   grunt.registerTask "build", ["clean", "test", "less:dist", "cssmin", "compress", "copy", "rename", "copy", "replace", "clean"]
   grunt.registerTask "default", ["build"]

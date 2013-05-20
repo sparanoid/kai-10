@@ -4,7 +4,7 @@ The missing child theme of Twenty Ten, A better interface based on Twenty Ten, N
 
 ## Download
 
-You can download the latest version [here][dl]. It has a custom theme update checker to keep it update to date as long as you activate it.
+You can get the latest version [here][dl]. It has a custom theme update checker to keep it update to date as long as you activate it.
 
 ## What's the Difference?
 

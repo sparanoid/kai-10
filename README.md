@@ -1,6 +1,6 @@
 # Kai 10 [![Build Status](https://travis-ci.org/sparanoid/kai-10.png)](https://travis-ci.org/sparanoid/kai-10) [![devDependency Status](https://david-dm.org/sparanoid/kai-10/dev-status.png)](https://david-dm.org/sparanoid/kai-10#info=devDependencies)
 
-The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.
+The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go.
 
 ## Download
 
@@ -21,5 +21,4 @@ Answer: Their theme reviewer thinks my theme “just offer a few minor CSS tweak
 
 GPLv2
 
-[demo]: http://postholic.com/kai-10-demo/
 [dl]: http://rsrc.sparanoid.com/download/kai-10.zip

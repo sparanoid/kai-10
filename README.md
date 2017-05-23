@@ -1,5 +1,7 @@
 # Kai 10 [![Build Status](https://travis-ci.org/sparanoid/kai-10.png)](https://travis-ci.org/sparanoid/kai-10) [![devDependency Status](https://david-dm.org/sparanoid/kai-10/dev-status.png)](https://david-dm.org/sparanoid/kai-10#info=devDependencies)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/kai-10.svg)](https://greenkeeper.io/)
+
 The missing child theme of Twenty Ten, A better interface based on Twenty Ten, No need to change the default theme, no database option strings will be created. Install and go.
 
 ## Download

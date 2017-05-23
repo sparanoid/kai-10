@@ -19,18 +19,18 @@
   "readmeFilename": "README.md",
   "gitHead": "c4440eb9020e6d352d3e829ea27d40eb0715a1a4",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-less": "~0.6.1",
-    "grunt-contrib-cssmin": "~0.6.0",
-    "grunt-contrib-compress": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.1",
+    "grunt": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-cssmin": "~2.2.0",
+    "grunt-contrib-compress": "~1.4.3",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-clean": "~1.1.0",
     "grunt-rename": "~0.1.2",
-    "grunt-replace": "~0.4.4",
-    "grunt-phplint": "0.0.5",
-    "grunt-coffeelint": "0.0.6",
-    "grunt-recess": "~0.3.3",
-    "matchdep": "~0.1.2"
+    "grunt-replace": "~1.0.1",
+    "grunt-phplint": "0.1.0",
+    "grunt-coffeelint": "0.0.16",
+    "grunt-recess": "~1.0.1",
+    "matchdep": "~1.0.1"
   }
 }
